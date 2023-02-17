@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 0.5em;
+}
+
+.search-bar,
+.features-container {
+    width: 90%;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+#search-input {
+    width: 70%;
+}
+
+.buttons input {
+    padding: 1px 6px;
+}
+
+.features-container {
+    display: flex;
+    text-align: center;
+    gap: 2px;
+}
+
+.features-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.special-search {
+    background-color: #7ee5da;
+    flex-grow: 1.5;
+}
+
+.about-google,
+.subscribe,
+.copyright {
+    font-size: 13px;
+}
+
+.about-google {
+    background-color: #70ccc2;
+    flex-grow: 1;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #62b3aa;
+    flex-grow: 1.5;
+}
+
+#email-input {
+    padding: 1px 2px;
+}
+
+#email-input::placeholder {
+    color: black;
+}
+
+.subscribe-submit input {
+    margin-right: 10px;
+    padding: 1px 5px;
+}
+
+.copyright {
+    margin-top: 1em;
+}
